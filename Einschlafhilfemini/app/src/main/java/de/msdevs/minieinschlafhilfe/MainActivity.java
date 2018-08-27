@@ -6,7 +6,6 @@ import android.app.*;
 import android.content.*;
 import android.os.*;
 import android.provider.*;
-
 import android.support.v7.app.*;
 import android.support.v7.widget.*;
 import android.text.*;
@@ -14,8 +13,8 @@ import android.text.method.*;
 import android.view.*;
 import android.view.View.*;
 import android.widget.*;
-
 import java.util.*;
+
 public class MainActivity extends AppCompatActivity 
 {
     @Override
@@ -147,16 +146,16 @@ public class MainActivity extends AppCompatActivity
 					//Folge von der Folgennummer spliten
 					
 
-					final String SplittedFolgennummer;
-					final String SplittedFolgennummer2;
+					final String string_teil_eins;
+					final String string_teil_zwei;
 					String[] itemSplit = folge.split(":");
-					SplittedFolgennummer = itemSplit[0];
-					SplittedFolgennummer2 = itemSplit[1];
+					string_teil_eins = itemSplit[0];
+					string_teil_zwei = itemSplit[1];
 					
                      //Anzeigen lassen über TextView		
 					//gesplitete Folgen Strings hinzufügen. (Neue Zeile)
 					 TextView tv_folge = (TextView)findViewById(R.id.tv_folge);
-					 tv_folge.setText("Name:" + " " + SplittedFolgennummer + "\n" + "Nummer:" + " " + SplittedFolgennummer2);
+					 tv_folge.setText("Name:" + " " + string_teil_eins + "\n" + "Nummer:" + " " + string_teil_zwei);
 					
 					}
 				});
